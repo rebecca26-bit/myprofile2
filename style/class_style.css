@@ -5,6 +5,29 @@ body{
     color: #5c3c21;
 }
 
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #fff;
+}
+
 h1, h2, h3{
     color: #8b4513;
 }
@@ -68,6 +91,12 @@ table{
     background-color: #f5deb3;
 }
 
+body.dark-mode table {
+    border-color: white;
+    background-color: antiquewhite;
+    color: #f0ecec;
+}
+
 th, td{
     text-align: left;
     padding: 10px;
@@ -77,4 +106,17 @@ th, td{
 
 th{
     background-color: #deb887;
+}
+body.dark-mode th,
+body.dark-mode td {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode p {
+    color: white;
+}
+
+body.dark-mode a {
+    color: #EEEEEE;
 }
