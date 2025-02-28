@@ -12,6 +12,8 @@
     </head>
 
     <body>
+
+        <button class="dark-mode-toggle">Switch Mode</button>
         <h2><u>My Info</u></h2>
         <ul>
             <li><b>FULL NAME:</b> Rebecca Alinda Pearl</li>
@@ -99,6 +101,15 @@
             Email address; <a href="mailto:pearlalinda020@gmail.com">pearlalinda020@gmail.com</a><br>
             Social media; <a href="https://x.com/AlindaRebecca">@AlindaRebecca</a>
         </p>
+
+        <script>
+            const toggleButton = document.querySelector('.dark-mode-toggle');
+            const body = document.body;
+
+            toggleButton.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            })
+        </script>
     </body>
 
 </html>
